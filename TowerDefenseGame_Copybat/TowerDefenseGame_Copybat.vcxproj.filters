@@ -13,10 +13,75 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="源文件\tool">
+      <UniqueIdentifier>{a44826ba-6d07-4e30-8334-a9a8997e65f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\util">
+      <UniqueIdentifier>{673c3bc2-effb-42c4-a1a5-cdedf549bfa3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\tool">
+      <UniqueIdentifier>{4bec095b-15e8-4e47-8899-a73c24e7be6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\test">
+      <UniqueIdentifier>{20956cc7-fcd3-48c4-bfed-f878a9a84d0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\test">
+      <UniqueIdentifier>{1a45ad0a-e9cf-4b1e-84ee-d8fc689bd344}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\test\util">
+      <UniqueIdentifier>{37ff0780-c593-4160-bd26-bcc40445b84d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\manager">
+      <UniqueIdentifier>{f25bc212-2555-4173-97fb-7355bc540a00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\manager">
+      <UniqueIdentifier>{8f0c0f33-84b7-4cec-a176-282d30492c70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\engine">
+      <UniqueIdentifier>{3d49c20d-2c4f-4423-a7a2-761af5e9d324}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\engine">
+      <UniqueIdentifier>{f8c35f22-7057-4bed-a9d4-5252798da92c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\util\graphics2D">
+      <UniqueIdentifier>{d68ddb8b-a8a0-4fe9-8385-ccb9784333eb}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="BaseEngine.cpp">
+      <Filter>源文件\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="TDGameEngine.cpp">
+      <Filter>源文件\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\cJSON\cJSON.c">
+      <Filter>源文件\tool</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Singleton.h">
+      <Filter>头文件\util</Filter>
+    </ClInclude>
+    <ClInclude Include="header.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SingletonTest.h">
+      <Filter>头文件\test\util</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseEngine.h">
+      <Filter>头文件\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="TDGameEngine.h">
+      <Filter>头文件\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="DataManager.h">
+      <Filter>头文件\manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Point.h">
+      <Filter>头文件\util\graphics2D</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

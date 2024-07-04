@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{3f93ada2-5ac0-4b5e-97bd-fcfd7982c3aa}</ProjectGuid>
-    <RootNamespace>TowerDefenseGameCopybat</RootNamespace>
+    <ProjectGuid>{e2bf6da3-255f-4f20-b1aa-904718929df0}</ProjectGuid>
+    <RootNamespace>Demo</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -118,6 +118,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <AdditionalIncludeDirectories>..\thirdparty\cJSON\include;..\thirdparty\SDL2_gfx\include;..\thirdparty\SDL2_image-2.8.2\include;..\thirdparty\SDL2_mixer-2.8.0\include;..\thirdparty\SDL2_ttf-2.22.0\include;..\thirdparty\SDL2-2.30.4\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
@@ -131,18 +132,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\thirdparty\cJSON\cJSON.c" />
-    <ClCompile Include="BaseEngine.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="TDGameEngine.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="BaseEngine.h" />
-    <ClInclude Include="DataManager.h" />
-    <ClInclude Include="header.h" />
-    <ClInclude Include="Point.h" />
-    <ClInclude Include="Singleton.h" />
-    <ClInclude Include="SingletonTest.h" />
-    <ClInclude Include="TDGameEngine.h" />
+    <ClCompile Include="demoMain.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
