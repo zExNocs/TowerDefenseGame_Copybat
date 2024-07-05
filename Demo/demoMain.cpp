@@ -1,6 +1,8 @@
 #define SDL_MAIN_HANDLED
 
 #include <iostream>
+#include <vector>
+#include <memory>
 
 #include <SDL.h>
 #include <SDL_image.h>
@@ -30,37 +32,30 @@ int openWindow() {
 	}
 }
 
-template <typename T>
-class Base {
-public:
-	static T qwq;
-
-	static void printqwq() {
-		std::cout << qwq << std::endl;
-	}
-};
-
-class Sub1 : public Base<int> {
-
-};
-
-class Sub2 : public Base<int> {
-
-};
-
-class Sub3 : public Base<double> {
-
-};
-
-int Sub1::qwq = 1;
-double Sub3::qwq = 3.0;
-
-
 int main() {
-	Sub2::qwq = 2;
-	Sub1::printqwq();
-	Sub2::printqwq();
-	Sub3::printqwq();
+	std::vector<std::weak_ptr<int> > m_vecTempObservers;
+
+	std::shared_ptr<int> a = std::make_shared<int>(10);
+	std::shared_ptr<int> b = std::make_shared<int>(20);
+	std::shared_ptr<int> c = std::make_shared<int>(30);
+	std::shared_ptr<int> d = std::make_shared<int>(40);
+
+	m_vecTempObservers.push_back(a);
+	m_vecTempObservers.push_back(b);
+	m_vecTempObservers.push_back(c);
+
+	std::weak_ptr<int> qwq = d;
+
+	/*
+	auto it = std::find_if(
+		m_vecTempObservers.begin(), m_vecTempObservers.end(),
+		[&qwq](const std::weak_ptr<int>& wp) { return !wp.owner_before(qwq) && !qwq.owner_before(wp); }
+	);
+	*/
+
+	if (d.owner_before(qwq) || qwq.owner_before(d)) {
+		std::cout << "qwq" << std::endl;
+	}
 
 	return 0;
 }

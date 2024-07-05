@@ -132,17 +132,23 @@
   <ItemGroup>
     <ClCompile Include="..\thirdparty\cJSON\cJSON.c" />
     <ClCompile Include="BaseEngine.cpp" />
+    <ClCompile Include="DrawingSurface.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="TDGameEngine.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BaseEngine.h" />
     <ClInclude Include="DataManager.h" />
+    <ClInclude Include="Observer.h" />
+    <ClInclude Include="ObserverContainer.h" />
+    <ClInclude Include="Renderable.h" />
+    <ClInclude Include="DrawingSurface.h" />
     <ClInclude Include="header.h" />
     <ClInclude Include="Point.h" />
     <ClInclude Include="Singleton.h" />
     <ClInclude Include="SingletonTest.h" />
     <ClInclude Include="TDGameEngine.h" />
+    <ClInclude Include="Updatable.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

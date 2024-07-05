@@ -46,19 +46,43 @@
     <Filter Include="头文件\util\graphics2D">
       <UniqueIdentifier>{d68ddb8b-a8a0-4fe9-8385-ccb9784333eb}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\surface">
+      <UniqueIdentifier>{715274a1-0445-4edb-adec-c6aa76a2e03d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\surface">
+      <UniqueIdentifier>{d7695f76-88e8-4648-88fb-a6704b269e8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\image">
+      <UniqueIdentifier>{e853232c-551a-4442-bcbc-d72d34721b25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\image">
+      <UniqueIdentifier>{2c330464-dc9a-4fc7-9c84-1ab2a38fa434}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\scene">
+      <UniqueIdentifier>{f1048390-cd10-4d81-b8df-395c61e2c733}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\scene">
+      <UniqueIdentifier>{2b912ac3-cb84-433d-a7d5-fa8afffd0f6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\util\observer">
+      <UniqueIdentifier>{8b56e708-013a-458f-ac1b-088d4231a1ad}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="BaseEngine.cpp">
-      <Filter>源文件\engine</Filter>
     </ClCompile>
     <ClCompile Include="TDGameEngine.cpp">
       <Filter>源文件\engine</Filter>
     </ClCompile>
     <ClCompile Include="..\thirdparty\cJSON\cJSON.c">
       <Filter>源文件\tool</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseEngine.cpp">
+      <Filter>源文件\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawingSurface.cpp">
+      <Filter>源文件\surface</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -82,6 +106,21 @@
     </ClInclude>
     <ClInclude Include="Point.h">
       <Filter>头文件\util\graphics2D</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawingSurface.h">
+      <Filter>头文件\surface</Filter>
+    </ClInclude>
+    <ClInclude Include="Observer.h">
+      <Filter>头文件\util\observer</Filter>
+    </ClInclude>
+    <ClInclude Include="Updatable.h">
+      <Filter>头文件\util\observer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderable.h">
+      <Filter>头文件\util\observer</Filter>
+    </ClInclude>
+    <ClInclude Include="ObserverContainer.h">
+      <Filter>头文件\util\observer</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

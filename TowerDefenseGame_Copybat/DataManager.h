@@ -9,7 +9,7 @@ class DataManager :
 
 public:
 	// ---------- 窗口相关 ---------- 
-	int WINDOW_WIDTH = 1280;
-	int WINDOW_HEIGHT = 720;
-
+	int WINDOW_WIDTH = 1280;	// 窗口宽度
+	int WINDOW_HEIGHT = 720;	// 窗口高度
+	int FPS = 60;				// 帧数
 };
