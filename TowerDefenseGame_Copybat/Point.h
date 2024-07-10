@@ -1,9 +1,10 @@
 #ifndef _POINT_H_
 #define _POINT_H_
 
-
 #include <cmath>
 #include <iostream>
+
+#include "SDL.h"
 
 struct Point {
 	// ----- 成员变量 -----
@@ -107,16 +108,20 @@ struct Point {
 	double angleWithHorizontal() const {
 		return std::atan2(y, x);
 	}
+
+public:
+	// 转化 SDL_Point
+	SDL_Point to_SDL_Point() { return { x,y }; }
 };
 
 // 输出运算符重载的实现
-std::ostream& operator<< (std::ostream& os, const Point& point) {
+inline std::ostream& operator<< (std::ostream& os, const Point& point) {
 	os << "(" << point.x << ", " << point.y << ")";
 	return os;
 }
 
 // 友元函数，支持标量在左侧的乘法运算符重载
-Point operator* (int scalar, const Point& point) {
+inline Point operator* (int scalar, const Point& point) {
 	return Point(point.x * scalar, point.y * scalar);
 }
 

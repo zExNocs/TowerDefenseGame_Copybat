@@ -67,6 +67,12 @@
     <Filter Include="头文件\util\observer">
       <UniqueIdentifier>{8b56e708-013a-458f-ac1b-088d4231a1ad}</UniqueIdentifier>
     </Filter>
+    <Filter Include="头文件\framework">
+      <UniqueIdentifier>{60829560-a0b7-4154-93fc-af84a50c4907}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\framework">
+      <UniqueIdentifier>{bb580f8e-f6e1-45b8-9713-9c8a67db08c9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -83,6 +89,18 @@
     </ClCompile>
     <ClCompile Include="DrawingSurface.cpp">
       <Filter>源文件\surface</Filter>
+    </ClCompile>
+    <ClCompile Include="Tile.cpp">
+      <Filter>源文件\framework</Filter>
+    </ClCompile>
+    <ClCompile Include="TileManager.cpp">
+      <Filter>源文件\manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Route.cpp">
+      <Filter>源文件\framework</Filter>
+    </ClCompile>
+    <ClCompile Include="Map.cpp">
+      <Filter>源文件\framework</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -113,14 +131,35 @@
     <ClInclude Include="Observer.h">
       <Filter>头文件\util\observer</Filter>
     </ClInclude>
-    <ClInclude Include="Updatable.h">
+    <ClInclude Include="ObserverContainer.h">
       <Filter>头文件\util\observer</Filter>
     </ClInclude>
     <ClInclude Include="Renderable.h">
-      <Filter>头文件\util\observer</Filter>
+      <Filter>头文件\framework</Filter>
     </ClInclude>
-    <ClInclude Include="ObserverContainer.h">
-      <Filter>头文件\util\observer</Filter>
+    <ClInclude Include="Updatable.h">
+      <Filter>头文件\framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Tile.h">
+      <Filter>头文件\framework</Filter>
+    </ClInclude>
+    <ClInclude Include="TileManager.h">
+      <Filter>头文件\manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Map.h">
+      <Filter>头文件\framework</Filter>
+    </ClInclude>
+    <ClInclude Include="MyString.h">
+      <Filter>头文件\util</Filter>
+    </ClInclude>
+    <ClInclude Include="MyStringTest.h">
+      <Filter>头文件\test\util</Filter>
+    </ClInclude>
+    <ClInclude Include="TestClass.h">
+      <Filter>头文件\test</Filter>
+    </ClInclude>
+    <ClInclude Include="Route.h">
+      <Filter>头文件\framework</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -12,6 +12,7 @@
 
 #include <cstring>
 #include <string>
+#include "MyString.h"
 
 // SDL library
 #include <SDL.h>

@@ -134,6 +134,10 @@
     <ClCompile Include="..\thirdparty\cJSON\cJSON.c" />
     <ClCompile Include="demoMain.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="A.h" />
+    <ClInclude Include="B.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

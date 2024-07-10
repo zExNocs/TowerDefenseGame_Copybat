@@ -28,4 +28,12 @@
       <Filter>源文件\cJSON</Filter>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="A.h">
+      <Filter>源文件\test</Filter>
+    </ClInclude>
+    <ClInclude Include="B.h">
+      <Filter>源文件\test</Filter>
+    </ClInclude>
+  </ItemGroup>
 </Project>

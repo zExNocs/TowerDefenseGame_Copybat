@@ -112,11 +112,11 @@ int BaseEngine::updateTick() {
 	long long lastTick = m_iTick;
 	m_iTick = SDL_GetTicks();
 
-	double delta = m_iTick - lastTick;
+	int delta = (int)(m_iTick - lastTick);
 	// 没有到达预期时间
-	if (delta < 1000.0 / FPS) {
+	if (delta * 1.0 < 1000.0 / FPS) {
 		SDL_Delay((Uint32)(1000.0 / FPS - delta));	// 延迟
 		m_iTick = SDL_GetTicks();	// 获取新的时间
 	}
-	return m_iTick - lastTick;
+	return (int) (m_iTick - lastTick);
 }

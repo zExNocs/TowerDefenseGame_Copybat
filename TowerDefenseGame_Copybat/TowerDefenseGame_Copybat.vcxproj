@@ -104,10 +104,17 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>..\thirdparty\cJSON\include;..\thirdparty\SDL2_gfx\include;..\thirdparty\SDL2_image-2.8.2\include;..\thirdparty\SDL2_mixer-2.8.0\include;..\thirdparty\SDL2_ttf-2.22.0\include;..\thirdparty\SDL2-2.30.4\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <SupportJustMyCode>false</SupportJustMyCode>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\thirdparty\SDL2_gfx\lib\x64;..\thirdparty\SDL2_image-2.8.2\lib\x64;..\thirdparty\SDL2_mixer-2.8.0\lib\x64;..\thirdparty\SDL2_ttf-2.22.0\lib\x64;..\thirdparty\SDL2-2.30.4\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_ttf.lib;SDL2_mixer.lib;SDL2_image.lib;SDL2_gfx.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>map</MapFileName>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -134,20 +141,31 @@
     <ClCompile Include="BaseEngine.cpp" />
     <ClCompile Include="DrawingSurface.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Map.cpp" />
+    <ClCompile Include="Route.cpp" />
     <ClCompile Include="TDGameEngine.cpp" />
+    <ClCompile Include="Tile.cpp" />
+    <ClCompile Include="TileManager.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BaseEngine.h" />
     <ClInclude Include="DataManager.h" />
+    <ClInclude Include="Map.h" />
+    <ClInclude Include="MyString.h" />
+    <ClInclude Include="MyStringTest.h" />
     <ClInclude Include="Observer.h" />
     <ClInclude Include="ObserverContainer.h" />
     <ClInclude Include="Renderable.h" />
     <ClInclude Include="DrawingSurface.h" />
     <ClInclude Include="header.h" />
     <ClInclude Include="Point.h" />
+    <ClInclude Include="Route.h" />
     <ClInclude Include="Singleton.h" />
     <ClInclude Include="SingletonTest.h" />
     <ClInclude Include="TDGameEngine.h" />
+    <ClInclude Include="TestClass.h" />
+    <ClInclude Include="Tile.h" />
+    <ClInclude Include="TileManager.h" />
     <ClInclude Include="Updatable.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
